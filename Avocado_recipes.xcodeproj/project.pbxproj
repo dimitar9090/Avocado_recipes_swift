@@ -11,6 +11,11 @@
 		D14158662B5B25E800A5DDB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14158652B5B25E800A5DDB9 /* ContentView.swift */; };
 		D14158682B5B25EA00A5DDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14158672B5B25EA00A5DDB9 /* Assets.xcassets */; };
 		D141586B2B5B25EA00A5DDB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D141586A2B5B25EA00A5DDB9 /* Preview Assets.xcassets */; };
+		D144475B2B5C762100B25714 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D144475A2B5C762100B25714 /* Launch Screen.storyboard */; };
+		D15A2C7C2B5DD97300A0527C /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A2C7B2B5DD97300A0527C /* AvocadosView.swift */; };
+		D15A2C7E2B5DD9AC00A0527C /* RipeningStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A2C7D2B5DD9AC00A0527C /* RipeningStageView.swift */; };
+		D15A2C802B5DD9E500A0527C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A2C7F2B5DD9E500A0527C /* SettingsView.swift */; };
+		D15A2C822B5DDA0A00A0527C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A2C812B5DDA0A00A0527C /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		D14158652B5B25E800A5DDB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D14158672B5B25EA00A5DDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D141586A2B5B25EA00A5DDB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D144475A2B5C762100B25714 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D15A2C7B2B5DD97300A0527C /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		D15A2C7D2B5DD9AC00A0527C /* RipeningStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStageView.swift; sourceTree = "<group>"; };
+		D15A2C7F2B5DD9E500A0527C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D15A2C812B5DDA0A00A0527C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		D14158622B5B25E800A5DDB9 /* Avocado_recipes */ = {
 			isa = PBXGroup;
 			children = (
+				D15A2C7A2B5DD8F400A0527C /* View */,
+				D15A2C792B5DD8DA00A0527C /* Model */,
+				D15A2C782B5DD8AB00A0527C /* Data */,
 				D14158632B5B25E800A5DDB9 /* Avocado_recipesApp.swift */,
-				D14158652B5B25E800A5DDB9 /* ContentView.swift */,
+				D144475A2B5C762100B25714 /* Launch Screen.storyboard */,
 				D14158672B5B25EA00A5DDB9 /* Assets.xcassets */,
 				D14158692B5B25EA00A5DDB9 /* Preview Content */,
 			);
@@ -65,6 +78,32 @@
 				D141586A2B5B25EA00A5DDB9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D15A2C782B5DD8AB00A0527C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D15A2C792B5DD8DA00A0527C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15A2C7A2B5DD8F400A0527C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D14158652B5B25E800A5DDB9 /* ContentView.swift */,
+				D15A2C7B2B5DD97300A0527C /* AvocadosView.swift */,
+				D15A2C7D2B5DD9AC00A0527C /* RipeningStageView.swift */,
+				D15A2C7F2B5DD9E500A0527C /* SettingsView.swift */,
+				D15A2C812B5DDA0A00A0527C /* AppView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D144475B2B5C762100B25714 /* Launch Screen.storyboard in Resources */,
 				D141586B2B5B25EA00A5DDB9 /* Preview Assets.xcassets in Resources */,
 				D14158682B5B25EA00A5DDB9 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15A2C802B5DD9E500A0527C /* SettingsView.swift in Sources */,
 				D14158662B5B25E800A5DDB9 /* ContentView.swift in Sources */,
+				D15A2C822B5DDA0A00A0527C /* AppView.swift in Sources */,
+				D15A2C7E2B5DD9AC00A0527C /* RipeningStageView.swift in Sources */,
 				D14158642B5B25E800A5DDB9 /* Avocado_recipesApp.swift in Sources */,
+				D15A2C7C2B5DD97300A0527C /* AvocadosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Avocado_recipes/Preview Content\"";
@@ -278,8 +323,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Avocado_recipes/Preview Content\"";
@@ -307,8 +355,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
